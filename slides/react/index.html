@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>React.js</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=680, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles/screen.css">
+  <link rel="stylesheet" href="/styles/highlight.css">
+  <link rel="stylesheet" href="/styles/custom.css">
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>React.js</h1>
+    <p><a href="https://twitter.com/roman01la">Роман Лютиков</a>, Redradix</p>
+  </header>
+
+  <section class="slide shout"><div>
+    <img src="pictures/react_logo.svg" alt="" class="place">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2><strong>React</strong> это…</h2>
+    <ul>
+      <li>Компонентная структура</li>
+      <li>Только компоненты представления</li>
+      <li>Нормализированные события DOM</li>
+      <li>Виртуальный DOM</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Приложение на <strong>React</strong> это…</h2>
+    <div style="text-align:center;">
+      <img src="pictures/tree.png" alt="">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Компонент в <strong>React</strong></h2>
+    <pre>
+      <code class="js">const Component = React.createClass({</code>
+      <code class="js">  render() {</code>
+      <code class="js">    return &lt;h1&gt;Hello, world!&lt;/h1&gt;;</code>
+      <code class="js">  }</code>
+      <code class="js">});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Как <strong>React</strong> рендерит компоненты в DOM и их изменения?</h2>
+    <ul>
+      <li>Виртуальный DOM — представление DOM в виде объекта</li>
+      <li>После каждого изменения создается новый VDOM и вычисляется разница между новым и предыдущим</li>
+      <li>Разница двух VDOM примененяется к DOM для его изменения</li>
+    </ul>
+  </div></section>
+
+  <script src="/scripts/shower.min.js"></script>
+  <script src="/scripts/highlight.min.js"></script>
+
+  <script>
+    hljs.configure({ tabReplace: '  ' });
+    hljs.initHighlightingOnLoad();
+  </script>
+
+</body>
+</html>

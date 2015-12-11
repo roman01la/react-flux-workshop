@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Flux</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=680, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles/screen.css">
+  <link rel="stylesheet" href="/styles/highlight.css">
+  <link rel="stylesheet" href="/styles/custom.css">
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Flux</h1>
+    <p><a href="https://twitter.com/roman01la">Роман Лютиков</a>, Redradix</p>
+  </header>
+
+  <section class="slide shout"><div>
+    <img src="pictures/flux_logo.svg" alt="" class="place" width="400">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2><strong>Flux</strong> это…</h2>
+    <ul>
+      <li>Паттерн</li>
+      <li>Не MVC</li>
+      <li>Однонаправленный поток данных</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Приложение на <strong>Flux</strong> это…</h2>
+    <div style="text-align:center;">
+      <img src="pictures/flux_flow.png" alt="" width="700">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Компоненты во <strong>Flux</strong></h2>
+    <ul>
+      <li>Событие — идентификатор изменения + данные</li>
+      <li>Диспетчер — pub/sub для рассылки событий слушателям</li>
+      <li>Хранилище</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Как <strong>Flux</strong> управляет данными и их изменениями?</h2>
+    <ul>
+      <li>Пользователь нажимает на кнопку</li>
+      <li>В диспетчер отправляется событие</li>
+      <li>Диспетчер уведомляет хранилище</li>
+      <li>Хранилище изменяет состояние и уведомляет компонент</li>
+      <li>Компонент достает данные из хранилища и обновляется</li>
+    </ul>
+  </div></section>
+
+  <script src="/scripts/shower.min.js"></script>
+  <script src="/scripts/highlight.min.js"></script>
+
+  <script>
+    hljs.configure({ tabReplace: '  ' });
+    hljs.initHighlightingOnLoad();
+  </script>
+
+</body>
+</html>
