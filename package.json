@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "(sleep 2 && open http://localhost:3000) & static -p 3000",
+    "start": "static -p 3000",
     "browserify-dev": "NODE_ENV=development watchify lessons/14-browserify/src/app.js -t babelify -g envify -o lessons/14-browserify/build/app.js -dv -p livereactload",
     "browserify-build": "NODE_ENV=production browserify lessons/14-browserify/src/app.js -t babelify -g envify | uglifyjs --screw-ie8 -c=dead_code,evaluate,loops,unused > lessons/14-browserify/build/app.js",
     "webpack-dev": "NODE_ENV=development node lessons/15-webpack/dev-server",
