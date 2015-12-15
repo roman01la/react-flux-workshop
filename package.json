@@ -1,20 +1,20 @@
 {
   "scripts": {
     "start": "static -p 3000",
-    "browserify-dev": "NODE_ENV=development watchify lessons/14-browserify/src/app.js -t babelify -g envify -o lessons/14-browserify/build/app.js -dv -p livereactload",
-    "browserify-build": "NODE_ENV=production browserify lessons/14-browserify/src/app.js -t babelify -g envify | uglifyjs --screw-ie8 -c=dead_code,evaluate,loops,unused > lessons/14-browserify/build/app.js",
-    "webpack-dev": "NODE_ENV=development node lessons/15-webpack/dev-server",
-    "webpack-build": "NODE_ENV=production webpack --config lessons/15-webpack/webpack.config.js --progress --colors",
+    "browserify-dev": "set NODE_ENV=development&& watchify lessons/14-browserify/src/app.js -t babelify -g envify -o lessons/14-browserify/build/app.js -dv -p livereactload",
+    "browserify-build": "set NODE_ENV=production&& browserify lessons/14-browserify/src/app.js -t babelify -g envify | uglifyjs --screw-ie8 -c=dead_code,evaluate,loops,unused > lessons/14-browserify/build/app.js",
+    "webpack-dev": "set NODE_ENV=development&& node lessons/15-webpack/dev-server",
+    "webpack-build": "set NODE_ENV=production&& webpack --config lessons/15-webpack/webpack.config.js --progress --colors",
     "sr-test": "_mocha lessons/16-testing_shallow_rendering/test/*.js -r babel/register",
     "jsdom-test": "_mocha lessons/17-testing_jsdom/test/**/*.js -r babel/register -r lessons/17-testing_jsdom/setup.js",
     "cover": "babel-node node_modules/.bin/babel-istanbul cover _mocha --include lessons/15-webpack/src/child_component.jsx --dir coverage -- lessons/16-testing_shallow_rendering/test/*.js",
-    "flux": "NODE_ENV=development watchify lessons/18-flux_components/src/app.js -t babelify -g envify -o lessons/18-flux_components/build/app.js -dv -p livereactload",
-    "top-down": "NODE_ENV=development watchify lessons/20-top_down_rendering/src/app.js -t babelify -g envify -o lessons/20-top_down_rendering/build/app.js -dv -p livereactload",
-    "cc": "NODE_ENV=development watchify lessons/21-top_down_rendering_and_container_components/src/app.js -t babelify -g envify -o lessons/21-top_down_rendering_and_container_components/build/app.js -dv -p livereactload",
-    "ssr": "NODE_ENV=development nodemon --exec babel-node -- lessons/22-server_rendering/src/server/index.js",
-    "ssr-client": "NODE_ENV=development watchify lessons/22-server_rendering/src/components/index.js --s renderState -t babelify -g envify -o lessons/22-server_rendering/src/server/public/javascripts/app.js -dv",
-    "dev-client": "NODE_ENV=development node exercise/dev-server",
-    "dev-server": "NODE_ENV=development nodemon --exec babel-node -- exercise/src/server"
+    "flux": "set NODE_ENV=development&& watchify lessons/18-flux_components/src/app.js -t babelify -g envify -o lessons/18-flux_components/build/app.js -dv -p livereactload",
+    "top-down": "set NODE_ENV=development&& watchify lessons/20-top_down_rendering/src/app.js -t babelify -g envify -o lessons/20-top_down_rendering/build/app.js -dv -p livereactload",
+    "cc": "set NODE_ENV=development&& watchify lessons/21-top_down_rendering_and_container_components/src/app.js -t babelify -g envify -o lessons/21-top_down_rendering_and_container_components/build/app.js -dv -p livereactload",
+    "ssr": "set NODE_ENV=development&& nodemon --exec babel-node -- lessons/22-server_rendering/src/server/index.js",
+    "ssr-client": "set NODE_ENV=development&& watchify lessons/22-server_rendering/src/components/index.js --s renderState -t babelify -g envify -o lessons/22-server_rendering/src/server/public/javascripts/app.js -dv",
+    "dev-client": "set NODE_ENV=development&& node exercise/dev-server",
+    "dev-server": "set NODE_ENV=development&& nodemon --exec babel-node -- exercise/src/server"
   },
   "devDependencies": {
     "express": "^4.13.3",
