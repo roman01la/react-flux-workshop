@@ -1,5 +1,4 @@
 node_modules
-build
 coverage
 lessons/22-server_rendering/src/server/public/javascripts/app.js
 server_rendering
