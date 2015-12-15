@@ -1,7 +1,10 @@
 node_modules
 build
 coverage
-app
 lessons/22-server_rendering/src/server/public/javascripts/app.js
 server_rendering
 !.gitignore
+exercise/src/components
+exercise/src/server
+exercise/src/stores
+exercise/src/app.jsx
