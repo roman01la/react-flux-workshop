@@ -20,6 +20,8 @@ $ npm i
 $ npm start
 ```
 
+Перейти по ссылке [localhost:3000/lessons](http://localhost:3000/lessons)
+
 В package.json находятся комманды для запуска некоторых уроков.
 
 Например: `npm run browserify-dev`.
