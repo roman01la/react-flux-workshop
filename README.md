@@ -8,7 +8,7 @@
 
 Прямая трансляция и запись: [Воркшоп «React.js & Flux»](https://www.youtube.com/watch?v=eIsrPJahdiU).
 
-[http://app.itsquiz.com/quizzes](http://app.itsquiz.com/quizzes)
+[http://itsquiz.com/en/activations/56757046dc93effa47e3b9cc](http://itsquiz.com/en/activations/56757046dc93effa47e3b9cc)
 
 ## Установка зависимостей
 
