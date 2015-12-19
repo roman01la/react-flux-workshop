@@ -6,6 +6,8 @@
 
 В папке *exercise* находится практическое задание.
 
+Прямая трансляция и запись: [Воркшоп «React.js & Flux»](https://www.youtube.com/watch?v=eIsrPJahdiU).
+
 ## Установка зависимостей
 
 Нужен Node.js версии 4 или новее.
@@ -20,6 +22,15 @@ $ npm i
 $ npm start
 ```
 
+Перейти по ссылке [localhost:3000/lessons](http://localhost:3000/lessons)
+
 В package.json находятся комманды для запуска некоторых уроков.
 
 Например: `npm run browserify-dev`.
+
+### Ресурсы
+
+- [React.js Conf 2015](https://www.youtube.com/playlist?list=PLb0IAmt7-GS1cbw4qonlQztYV1TAW0sCr)
+- ReactEurope 2015 [Day 1](https://www.youtube.com/playlist?list=PLCC436JpVnK0Phxld2dD4tM4xPMxJCiRD), [Day 2](https://www.youtube.com/playlist?list=PLCC436JpVnK3HvUSAHpt-LRJkIK8pQG6R)
+- [ReactiveConf 2015](https://www.youtube.com/channel/UCBHdUnixTWymmXBIw12Y8Qg/videos)
+- [awesome-react](https://github.com/enaqx/awesome-react)
