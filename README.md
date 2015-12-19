@@ -8,6 +8,8 @@
 
 Прямая трансляция и запись: [Воркшоп «React.js & Flux»](https://www.youtube.com/watch?v=eIsrPJahdiU).
 
+[http://app.itsquiz.com/quizzes](http://app.itsquiz.com/quizzes)
+
 ## Установка зависимостей
 
 Нужен Node.js версии 4 или новее.
