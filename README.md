@@ -6,9 +6,9 @@
 
 В папке *exercise* находится практическое задание.
 
-Прямая трансляция и запись: [Воркшоп «React.js & Flux»](https://www.youtube.com/watch?v=eIsrPJahdiU).
+Запись: [часть 1](https://www.youtube.com/watch?v=0h7eluYJtZc), [часть 2](https://www.youtube.com/watch?v=iGbw7FFpvXQ).
 
-[http://itsquiz.com/en/activations/56757046dc93effa47e3b9cc](http://itsquiz.com/en/activations/56757046dc93effa47e3b9cc)
+[Опрос](http://itsquiz.com/en/activations/56757046dc93effa47e3b9cc)
 
 ## Установка зависимостей
 
